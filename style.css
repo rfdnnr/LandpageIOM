@@ -76,7 +76,7 @@ header {
     top: 55%; /* Ajusta para ficar no meio da imagem */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Corrige o posicionamento exato */
-    font-size: 21px; /* Ajuste do tamanho */
+    font-size: 16px; /* Ajuste do tamanho */
     font-weight:normal;
     width:39vh;
     text-align: center;
@@ -88,7 +88,7 @@ header {
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Corrige o posicionamento exato */
     color: #29166F; /* Garante que o texto fique visível */
-    font-size: 34px; /* Ajuste do tamanho */
+    font-size: 24px; /* Ajuste do tamanho */
     font-weight: bold;
     text-align: center;
     width: 83.25%;
