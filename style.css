@@ -98,6 +98,9 @@ header {
     #titulo {
         font-size: 34px;
     }
+    #subTitulo {
+        font-size: 18px;
+    }
 }
 @media (min-width:722px){
     #subTitulo {
@@ -202,11 +205,12 @@ header {
     position: absolute;
     top: 60px; /* Ajuste conforme necessário */
     right: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #449284;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.347);
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
+    width:28%;
 }
 
 .opcoesMenu a {
@@ -215,6 +219,8 @@ header {
     text-decoration: none;
     color: black;
     border-radius: 3px;
+    font-family: 'Lato';
+    font-size: 16px;
 }
 
 .opcoesMenu a:hover {
@@ -312,8 +318,20 @@ header {
     font-size: 22px;
 }
 
-
-
+#botaoMatriculeSe {
+    color: white;
+    border-radius: 10px;
+    width: 210px;
+    height: 40px;
+    border: none; /* Remove a borda */
+    background-color: #29166F;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato';
+    left: 50%;
+    margin-top: 20px;
+}
 
 /* Responsividade para telas maiores */
 @media (min-width: 768px) {
