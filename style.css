@@ -99,6 +99,12 @@ header {
         font-size: 34px;
     }
 }
+@media (min-width:722px){
+    #subTitulo {
+        font-size: 21px;
+        width: 65vh;
+    }
+}
 
 #BotaoContato {
     color: black;
