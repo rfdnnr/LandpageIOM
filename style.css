@@ -88,10 +88,16 @@ header {
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Corrige o posicionamento exato */
     color: #29166F; /* Garante que o texto fique visível */
-    font-size: 24px; /* Ajuste do tamanho */
+    font-size: 22px; /* Ajuste do tamanho */
     font-weight: bold;
     text-align: center;
     width: 83.25%;
+}
+
+@media (min-width:469px){
+    #titulo {
+        font-size: 34px;
+    }
 }
 
 #BotaoContato {
