@@ -1,0 +1,242 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Fonte padrão para textos menores */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Aplicando a fonte Poppins para textos grandes */
+h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins para títulos */
+    font-weight: 600; /* Peso mais forte para destacar os títulos */
+}
+
+/* Cabeçalho */
+header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: relative; /* Para garantir que o menu dropdown seja posicionado corretamente */
+    width: 100%; /* Ajusta a largura do cabeçalho para 100% da tela */
+    padding-top: 15.37%;
+}
+
+
+/* Logo centralizado */
+#LogoIom {
+    height: auto;
+    width: 86%; /* Define a largura do logo como 30% da largura da tela */
+    max-width: 120px; /* Limita a largura máxima do logo */
+    margin-bottom: 10px;
+}
+
+
+/* Botão de menu */
+#BarraOpções {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5em;
+    
+    position: absolute;
+    right: 20px; /* Mantém na lateral direita */
+}
+
+#divImagem1 {
+    position:relative;
+    width: 100%;
+}
+
+#Imagem1 {
+    width: 100vw; /* Mantém a largura total da tela */
+    height: 47.5vh; /* Altura inicial para telas menores */
+    max-height: 500px; /* Evita que fique muito grande */
+    object-fit: cover; /* Faz um "zoom" cortando as bordas sem distorcer */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    opacity: 55%;
+    transition: height 0.3s ease-in-out; /* Suaviza a transição da altura */
+}
+
+#subTitulo {
+    position:absolute;
+    top: 55%; /* Ajusta para ficar no meio da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o posicionamento exato */
+    font-size: 21px; /* Ajuste do tamanho */
+    font-weight:normal;
+    width:39vh;
+    text-align: center;
+}
+
+#titulo {
+    position: absolute;
+    top: 20%; /* Ajusta para ficar no meio da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o posicionamento exato */
+    color: #29166F; /* Garante que o texto fique visível */
+    font-size: 34px; /* Ajuste do tamanho */
+    font-weight: bold;
+    text-align: center;
+    width: 83.25%;
+}
+
+#BotaoContato {
+    color: black;
+    border-radius: 10px;
+    width: 121px;
+    height: 40px;
+    border: none; /* Remove a borda */
+    background-color: #7BF559;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato';
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#BotaoContato:hover {
+    background-color: #4ed42d; /* Cor mais escura ao passar o mouse */
+}
+
+#retangulo2 {
+    background-color: #449284;
+    width: 100%;
+    height: 19vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+#BotaoConhecaCursos {
+    color: white;
+    border-radius: 10px;
+    width: 210px;
+    height: 40px;
+    border: none; /* Remove a borda */
+    background-color: #29166F;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#BotaoConhecaCursos:hover {
+    background-color: #5138a9; /* Cor mais escura ao passar o mouse */
+}
+
+#logoInsta {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#logoFacebook {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#divRedesSociais {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+    display: flex;
+    gap: 50px; /* Ajuste o valor conforme necessário para aumentar ou diminuir o espaçamento */
+}
+
+#logoZap {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#textoCursos {
+    font-size: 34px;
+    font-weight: bold;
+    color: #29166F;
+    padding-top: 14%;
+}
+
+#fotoMiniImplante {
+    width: 280px;
+    height: auto;
+}
+
+/* Menu dropdown */
+.opcoesMenu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.opcoesMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+}
+
+.opcoesMenu a:hover {
+    background-color: #e3e3e3;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Para manter os elementos lado a lado */
+        justify-content: space-between;
+    }
+
+    #LogoIom {
+        height: 100px;
+        margin-bottom: 0;
+    }
+
+    .opcoesMenu {
+        position: static;
+        display: flex;
+        gap: 15px;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .opcoesMenu a {
+        padding: 10px 15px;
+        font-size: 1.1em;
+        border: none;
+    }
+
+    #BarraOpções {
+        display: none;
+    }
+}
