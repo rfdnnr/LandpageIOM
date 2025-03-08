@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('BotaoConhecaCursos').addEventListener('click', function() {
-        document.getElementById('textoCursos').scrollIntoView({ behavior: 'smooth' });
-    });
 
     const barraOpcoes = document.getElementById('BarraOpções');
     const opcoesMenu = document.querySelector('.opcoesMenu');
@@ -18,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('opcaoCurso').addEventListener('click', function() {
-        document.getElementById('textoCursos').scrollIntoView({ behavior: 'smooth' });
+        window.location.href = 'index.html#textoCursos';
     });
 
 });
-

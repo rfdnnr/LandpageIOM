@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Fonte padrão para textos menores */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Aplicando a fonte Poppins para textos grandes */
+h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins para títulos */
+    font-weight: 600; /* Peso mais forte para destacar os títulos */
+}
+
+/* Cabeçalho */
+header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: relative; /* Para garantir que o menu dropdown seja posicionado corretamente */
+    width: 100%; /* Ajusta a largura do cabeçalho para 100% da tela */
+    padding-top: 15.37%;
+}
+
+
+/* Logo centralizado */
+#LogoIom {
+    height: auto;
+    width: 86%; /* Define a largura do logo como 30% da largura da tela */
+    max-width: 120px; /* Limita a largura máxima do logo */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+/* Botão de menu */
+#BarraOpções {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5em;
+    
+    position: absolute;
+    right: 20px; /* Mantém na lateral direita */
+}
+
+#botaoVoltar {
+    width: 60px;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: #449284;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: 19px;
+    font-weight: normal;
+    border-radius: 10px;
+    position: absolute;
+    left: -92.5%; /* Alinha à esquerda */
+}
+
+#containerLogoIom {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que o logo centralize corretamente */
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+/* Menu dropdown */
+.opcoesMenu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    right: 20px;
+    background-color: #449284;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.347);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    width:28%;
+}
+
+.opcoesMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.opcoesMenu a:hover {
+    background-color: #e3e3e3;
+}
+
+#divBotoesCursos {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre os botões */
+    flex-wrap: wrap; /* Permite que os botões se ajustem à linha, se necessário */
+    width: 100%; /* O contêiner ocupa toda a largura disponível */
+    padding-top: 10px;
+}
+
+
+
+#botaoMatriculeSe {
+    color: white;
+    border-radius: 10px;
+    width: 210px;
+    height: 40px;
+    border: none; /* Remove a borda */
+    background-color: #29166F;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato';
+    left: 50%;
+    margin-top: 20px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Para manter os elementos lado a lado */
+        justify-content: space-between;
+    }
+
+    #LogoIom {
+        height: auto;
+        width: 86%;
+    }
+
+    .opcoesMenu {
+        position: static;
+        display: flex;
+        gap: 15px;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .opcoesMenu a {
+        padding: 10px 15px;
+        font-size: 1.1em;
+        border: none;
+    }
+
+    #BarraOpções {
+        display: none;
+    }
+}
