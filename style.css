@@ -217,9 +217,9 @@ header {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #29166F;
     border-radius: 3px;
-    font-family: 'Lato';
+    font-family: 'Poppins';
     font-size: 16px;
 }
 
@@ -333,31 +333,101 @@ header {
     margin-top: 20px;
 }
 
+/* Virou a tela horizontalmente */
+@media (max-height: 670px){
+    #subTitulo {
+        width: 85vh;
+    }
+    header {
+        padding-top: 0px;
+    }
+}
+@media (max-height: 545px){
+    #titulo {
+        font-size: 29px;
+    }
+    #retangulo2 {
+        height: 30vh;
+    }
+    #Imagem1 {
+        height: 55vh;
+    }
+
+}
+@media (max-height: 425px){
+    #subTitulo {
+        width: 135vh;
+    }
+    #Imagem1 {
+        height: 100vh;
+    }
+}
+
+@media (max-height: 375px){
+    #subTitulo {
+        width: 170vh;
+    }
+    #BotaoContato {
+        top: 75%;
+    }
+}
+
+@media (max-height: 305px){
+    #Imagem1 {
+        height: 65vh;
+    }
+    #subTitulo {
+        width: 200vh;
+    }
+    #retangulo2 {
+        height: 50vh;
+    }
+}
+@media (max-height: 258px){
+    #subTitulo{
+        font-size: 14px;
+    }
+    #titulo {
+        font-size: 20px;
+    }
+    
+}
+    
+
+
 /* Responsividade para telas maiores */
 @media (min-width: 768px) {
     header {
         flex-direction: row; /* Para manter os elementos lado a lado */
         justify-content: space-between;
+        padding-top: 0%;
     }
 
     #LogoIom {
-        height: 100px;
-        margin-bottom: 0;
+        height: auto;
+        width: 86%;
+    }
+
+    #retangulo2 {
+        height: 25vh;
     }
 
     .opcoesMenu {
-        position: static;
+        position: relative;
+        top: auto; /* Ajuste conforme necessário */
+        right: 20px; /* Mantém colado no lado direito */
         display: flex;
-        gap: 15px;
+        gap: 40px;
         background: none;
         box-shadow: none;
         padding: 0;
+        align-items: center;
+        white-space: nowrap;
     }
 
-    .opcoesMenu a {
-        padding: 10px 15px;
-        font-size: 1.1em;
-        border: none;
+    #textoCursos {
+        padding-top: 6%;
+        padding-bottom: 3%;
     }
 
     #BarraOpções {

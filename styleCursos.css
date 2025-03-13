@@ -57,17 +57,17 @@ header {
 
 #botaoVoltar {
     width: 60px;
-    height: 40px;
+    height: 30px;
     color: white;
     border: none;
     background-color: #449284;
     cursor: pointer;
     font-family: 'Lato';
-    font-size: 19px;
+    font-size: 14px;
     font-weight: normal;
     border-radius: 10px;
     position: absolute;
-    left: -92.5%; /* Alinha à esquerda */
+    left: 3.5%; /* Alinha à esquerda */
 }
 
 #containerLogoIom {
@@ -141,6 +141,7 @@ header {
     header {
         flex-direction: row; /* Para manter os elementos lado a lado */
         justify-content: space-between;
+        padding-top: 0%;
     }
 
     #LogoIom {
@@ -148,19 +149,26 @@ header {
         width: 86%;
     }
 
+    #retangulo2 {
+        height: 25vh;
+    }
+
     .opcoesMenu {
-        position: static;
+        position: relative;
+        top: auto; /* Ajuste conforme necessário */
+        right: 20px; /* Mantém colado no lado direito */
         display: flex;
-        gap: 15px;
+        gap: 40px;
         background: none;
         box-shadow: none;
         padding: 0;
+        align-items: center;
+        white-space: nowrap;
     }
 
-    .opcoesMenu a {
-        padding: 10px 15px;
-        font-size: 1.1em;
-        border: none;
+    #textoCursos {
+        padding-top: 6%;
+        padding-bottom: 3%;
     }
 
     #BarraOpções {
